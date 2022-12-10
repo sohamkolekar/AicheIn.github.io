@@ -1,0 +1,42 @@
+////Java code
+
+
+public class pattern {
+    public static void main(String[] args)throws Exception{
+        
+        int n=5,j,k;
+        int spaces;
+        for(int i=n;i>=1;i--){
+            spaces=2*(n-i+1)-2;
+            for(j=1;j<=i;j++){
+                System.out.print("^");
+            }
+            for(k=1;k<=spaces;k++){
+            System.out.print(" ");
+            }
+            for(j=1;j<=i;j++){
+                System.out.print("^");
+            }
+            System.out.println();
+        }
+
+
+
+        for(int i=1;i<=n;i++){
+            spaces=2*(n-i+1)-2;
+            for(j=1;j<=i;j++){
+                System.out.print("^");
+            }
+            for(k=1;k<=spaces;k++){
+                System.out.print(" ");
+            }
+            for(j=1;j<=i;j++){
+                System.out.print("^");
+            }
+            System.out.println();
+        }
+        
+        
+
+    }
+}

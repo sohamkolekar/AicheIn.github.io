@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+            <title>
+                Helllllllooooooo
+            </title>
+            <link  rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+            <link
+            rel="stylesheet"
+            type="text/css"
+            href="style.css"
+           
+            />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+        </head>    
+       
+        <body class="body">
+            
+            <div class="hover">
+                <div id="mySidenav" class="home">
+                    <a href="index.html" id="home" style="padding-left:20px ;">Home <i class="fa fa-fw fa-home"></i></a>
+                </div>
+
+                   
+                    <div class="about">
+                        <a href="about.html" id="about">About</a>
+                        <i class="fa fa-fw fa-info" style="padding-left: 25px;"></i>
+                        
+                    </div>
+                    <div class="projects">
+                        <a href="projects.html" id="projects">Projects</a>
+                        <i class="fa fa-fw fa-calendar" style="padding-left: 5px;"></i>
+                    </div>
+                    <div class="contact">
+                        <a href="contact.html" id="contact">Contact </a> 
+                        <i class="fa fa-fw fa-phone" style="padding-left:10px ;"></i>
+                    </div>
+            </div>        
+                    
+                    
+                    
+
+                
+
+
+                <div class="header">
+                    <a href=""><img src="websiteimages/nitrr.png" width=100 height=100/></a>
+                    <h1 >AICHE</h1>
+                    <h2>website</h2>
+                    <div class="menu">
+                        <a href="aboutus.html">about us</a>
+                        <a href="ongoing.html">ongoing</a>
+                    </div>
+                    <a href=""><img src="websiteimages/Untitled.png" width=360 height=300/></a>
+
+                </div>
+                <div class="items" >
+                    
+                    <p style="font-size: 48px;">
+                        hi hello how do you do
+                        
+                   <button
+                    type="button" class="imoji-2" style="font-size: 48px;"onclick="func('&#128516','128516')">
+                        &#128516;
+                    </button>
+
+                   
+
+                     <button
+                    type="button" class="imoji-3" style="font-size:48px;" onclick="func('&#128151','128151')" >
+                         &#128151;
+                    </button>
+
+                    <button
+                    type="button" class="imoji-1" style="font-size: 48px;" onclick="func('&#128525','128525')" >
+                    &#128525;
+                    </button>
+
+                    <div id='128525' style="font-size: 30px;"></div>
+                    <div id='128516' style="font-size: 30px;"></div>
+                    <div id='128151' style="font-size: 30px;"></div>
+                     
+                   
+
+                    </p>
+                    <article>
+                        <h1>aiche orientation</h1>
+                    </article>
+                    
+                </div>
+        
+               
+               
+                <div class="iconbar" style="width: 25%;">
+                    <a href="#" class="fb"><img src="websiteimages/fb.png" width="50" height="50"></a>
+                    <a href="#" class="wtsap"><img src="websiteimages/wtsap.jpeg" width="50" height="50"></a>
+                    <a href="#" class="mail"><img src="websiteimages/mail.jpeg" width="50" height="50"></a> 
+                    <a href="#" class="yt"><img src="websiteimages/yt.jpeg" width="50" height="50"></a>
+                </div>                
+
+                <div class="grid">
+                    
+                    <!--<div class="item">
+                        <a href="#">
+                            <video width="400" height="300" controls>
+                                <source src="20221120_014405.mp4" type="video/mp4">
+
+                        </video></a>
+                        <p>1</p>
+                    </div>-->
+                    <div class="item">
+                        <a href=""><img src="websiteimages/Chem-e-auction.jpeg" width="300" height="400"></a>
+                        <p>1</p>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="websiteimages/aiche-induct.jpg" width=300 height=400/></a>
+                        <p>2</p>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="websiteimages/wifi.png" width="300" height="400"/></a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="websiteimages/cheme.jpg" width=300 height=400/></a>
+                    </div>
+
+                </div>
+
+                <div class="footer">
+                    
+                    <a href=""><img src="" width=100 height=100/></a>
+
+                </div>
+            
+                <script
+                >
+                
+                var i
+                var j,button_name,button_obj,k
+                //localStorage.clear()
+                    function func(j,k){
+                      
+                      console.log(j,k)
+                        
+                        i=button(k);
+                        i++;
+                        if(typeof(Storage)!=="undefined"){
+                            localStorage.setItem(k,i)
+                            document.getElementById(k).innerHTML=j+'is'+i
+                        }
+                        else{
+                            document.getElementById(k).innerText="dhwiuhdeohfoe";
+                        }
+                        
+                    }
+                    function button(button_name){
+                       
+                        if(button_name=='128516'){
+                            button_obj=localStorage.getItem(button_name)
+                        }
+                        else if(button_name=='128151'){
+                            button_obj=localStorage.getItem(button_name)
+                        }
+                        else if(button_name=='128525'){
+                            button_obj=localStorage.getItem(button_name)
+                        }
+                        return button_obj
+                    }
+                </script>
+            
+            </body>
+        
+</html>
